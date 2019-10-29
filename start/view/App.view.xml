@@ -1,0 +1,30 @@
+<mvc:View controllerName="start.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" displayBlock="true" busy="{appModel>/isBusy}">
+	<App id="app">
+		<pages>
+			<Page title="{i18n>title}" id="_docReviewePage">
+				<content>
+					<l:VerticalLayout width="100%">
+						<l:content>
+							<Panel id="_commentsPanel">
+								<headerToolbar>
+									<Toolbar>
+										<Title level="H2" text="User ID"/>
+									</Toolbar>
+								</headerToolbar>
+								<Input id="userId" value="{/userId}"/>
+							</Panel>
+						</l:content>
+					</l:VerticalLayout>
+				</content>
+				<footer>
+					<Toolbar id="actionsToolbar">
+						<ToolbarSpacer/>
+						<Button id="uploadButton" text="Go To Detail" type="Accept" press="goToDetail"/>
+						<!--<Button id="cancelButton" text="Cancel" type="Reject" press="resetData"/>-->
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

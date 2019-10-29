@@ -1,0 +1,27 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" displayBlock="true" busy="{appModel>/isBusy}"
+	controllerName="start.controller.Detail" height="100%">
+	<Page title="Detail">
+		<content>
+			<l:VerticalLayout width="100%">
+				<l:content>
+					<Panel id="_detailPanel">
+						<headerToolbar>
+							<Toolbar>
+								<Title level="H2" text="Payment"/>
+							</Toolbar>
+						</headerToolbar>
+						<Input id="payment" value="{/payment}"/>
+					</Panel>
+				</l:content>
+			</l:VerticalLayout>
+		</content>
+		<footer>
+			<Toolbar >
+				<ToolbarSpacer/>
+				<Button  text="Start Approval" type="Accept" press="startApproval"/>
+				<!--<Button i text="{i18n>ResetBtn}" type="Reject" press="resetData"/>-->
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

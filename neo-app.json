@@ -1,0 +1,48 @@
+{
+	"welcomeFile": "/start/index.html",
+	"routes": [{
+		"path": "/resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/test-resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	}, {
+		"path": "/sf",
+		"target": {
+			"type": "destination",
+			"name": "SFSF"
+		},
+		"description": "SAP Cloud Platform Business Rules"
+	}, {
+		"path": "/services/userapi",
+		"target": {
+			"type": "service",
+			"name": "userapi"
+		}
+	}, {
+		"path": "/bpmworkflowruntime",
+		"target": {
+			"type": "destination",
+			"name": "bpmworkflowruntime"
+		},
+		"description": "SAP Cloud Platform Workflow"
+	}, {
+		"path": "/bpmworkflowruntime_mail",
+		"target": {
+			"type": "destination",
+			"name": "bpmworkflowruntime_mail"
+		},
+		"description": "SAP Cloud Platform Mail"
+	}],
+	"sendWelcomeFileRedirect": true
+}

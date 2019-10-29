@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "start.Demo",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/start",
+        "appUrl": "#Demo-Display",
+        "navigationComponentName": "start",
+        "intentSemanticObject": "Demo",
+        "intentAction": "Display",
+        "html5ApplicationName": "demo",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "5df8b5ce-4525-4e86-9e7c-c8c4df2f37dd"
+        ],
+        "contentPackages": [
+            "5dbfc7af-c9f4-4719-9f2e-a27cb69f4a98"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Start",
+        "subtitle": "",
+        "searchKeywords": "Start,",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

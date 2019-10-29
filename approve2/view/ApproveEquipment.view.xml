@@ -1,0 +1,90 @@
+<mvc:View controllerName="start.samples.approve2.controller.ApproveEquipment" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<App height="90%">
+		<pages>
+			<Page title="{i18n>title}" showHeader="false" showFooter="false">
+				<content>
+					<l:VerticalLayout width="100%" id="__layout0">
+						<l:content>
+							<!--<ObjectHeader title="{/task/Title}" titleActive="false" id="__header0">-->
+							<!--	<attributes>-->
+							<!--		<ObjectAttribute title="{i18n>createdOn}" text="{/task/CreatedOn}"/>-->
+							<!--		<ObjectAttribute title="{i18n>description}" text="{/task/Description}"/>-->
+							<!--	</attributes>-->
+							<!--	<statuses>-->
+							<!--		<ObjectStatus text="{/task/Status}" state="None"/>-->
+							<!--		<ObjectStatus text="{/task/Priority}" state="{/task/PriorityState}"/>-->
+							<!--	</statuses>-->
+							<!--</ObjectHeader>-->
+							<l:HorizontalLayout id="__layout1">
+								<l:content>
+									<IconTabBar selectedKey="__filter0" id="__bar0">
+										<items>
+											<IconTabFilter icon="sap-icon://hint" id="__filter0">
+												<content>
+													<l:HorizontalLayout id="hLayout11">
+														<FlexBox width="100%" id="__box0">
+															<items>
+																<l:VerticalLayout id="hLayout12">
+																	<HBox width="100%" id="__hbox0">
+																		<l:HorizontalLayout id="hLayoutJob1">
+																			<f:Form >
+																				<f:layout>
+																					<f:GridLayout singleColumn="true"/>
+																				</f:layout>
+																				<f:FormContainer expanded="true" title="{i18n>persInfo}" expandable="false">
+																					<f:formElements>
+																						<f:FormElement label="ID">
+																							<Text text="{/UserId}"/>
+																						</f:FormElement>
+																						<f:FormElement label="First Name">
+																							<Text text="{/FirstName}"/>
+																						</f:FormElement>
+																						<f:FormElement label="Last Name">
+																							<Text text="{/LastName}"/>
+																						</f:FormElement>
+																					</f:formElements>
+																				</f:FormContainer>
+																			</f:Form>
+																		</l:HorizontalLayout>
+																		<VBox id="VBoxJob1">
+																			<l:HorizontalLayout id="hLayoutJob2">
+																				<f:Form >
+																					<f:layout>
+																						<f:GridLayout singleColumn="true"/>
+																					</f:layout>
+																					<f:FormContainer expanded="true" title="{i18n>unitInfo}" expandable="false">
+																						<f:formElements>
+																							<f:FormElement label="Cost Center">
+																								<Text text="{/CostCenter}"/>
+																							</f:FormElement>
+																							<f:FormElement label="Manager">
+																								<Text text="{/Manager}"/>
+																							</f:FormElement>
+																							<f:FormElement label="Payment">
+																								<Text text="{/Payment}"/>
+																							</f:FormElement>
+																						</f:formElements>
+																					</f:FormContainer>
+																				</f:Form>
+																			</l:HorizontalLayout>
+																		</VBox>
+																	</HBox>
+																</l:VerticalLayout>
+															</items>
+														</FlexBox>
+													</l:HorizontalLayout>
+												</content>
+											</IconTabFilter>
+											<IconTabFilter icon="sap-icon://employee-lookup" id="__filter1" visible="false"></IconTabFilter>
+										</items>
+									</IconTabBar>
+								</l:content>
+							</l:HorizontalLayout>
+						</l:content>
+					</l:VerticalLayout>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
